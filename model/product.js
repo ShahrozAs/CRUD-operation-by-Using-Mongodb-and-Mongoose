@@ -10,7 +10,7 @@ const productSchema = new Schema({
   rating: Number,
   stock: Number,
   brand: String,
-  category: String,
+  category: {type:String ,default:""},
   thumbnail: String,
   images: [String],
 });
